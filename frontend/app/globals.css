@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #0F3D3E 0%, #1A5A5B 100%);
+    min-height: 100vh;
+    color: white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #2BD17E;
+    @apply hover:brightness-110 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-white/20 hover:border-white/40 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 bg-transparent;
+  }
+
+  .input-field {
+    background-color: #224957;
+    @apply w-full px-4 py-3 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#2BD17E] focus:border-transparent backdrop-blur-sm;
+  }
+
+  .card {
+    background-color: #092C39;
+    @apply backdrop-blur-sm rounded-lg border border-white/10 overflow-hidden;
+  }
+
+  .movie-card {
+    background-color: #092C39;
+    @apply backdrop-blur-sm rounded-lg overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105;
+    width: 282px;
+    height: 504px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .upload-area {
+    @apply border-2 border-dashed border-white/30 rounded-lg p-12 text-center hover:border-white/50 transition-colors duration-200;
+    background-color: #092C39;
+  }
+
+  .page-container {
+    @apply min-h-screen bg-gradient-to-br from-slate-800 via-teal-800 to-slate-900;
+  }
+} 

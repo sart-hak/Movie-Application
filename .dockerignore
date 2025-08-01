@@ -1,0 +1,61 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+.next
+dist
+build
+out
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Testing
+coverage
+*.test.js
+*.spec.js
+
+# Database files
+*.sqlite
+*.db
+
+# Uploads (will be mounted as volume)
+uploads
+
+# Cache directories
+.cache
+.parcel-cache
+
+# Logs
+logs
+*.log
+
+# Docker files (don't copy into container)
+Dockerfile
+.dockerignore
+docker-compose.yml 
