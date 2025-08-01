@@ -106,17 +106,15 @@ export default function LoginForm() {
           {isLoading ? 'Please wait...' : isLogin ? 'Login' : 'Sign up'}
         </button>
 
-        {!isLogin && (
-          <div className="text-center mt-6">
-            <button
-              type="button"
-              onClick={toggleMode}
-              className="text-white/60 hover:text-white text-sm font-medium transition-colors"
-            >
-              Already have an account? Sign in
-            </button>
-          </div>
-        )}
+        <div className="text-center mt-6">
+          <button
+            type="button"
+            onClick={toggleMode}
+            className="text-white/60 hover:text-white text-sm font-medium transition-colors"
+          >
+            {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
+          </button>
+        </div>
       </form>
     </div>
   );
